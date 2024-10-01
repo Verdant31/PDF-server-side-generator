@@ -1,0 +1,84 @@
+### Geração de PDF
+POST http://localhost:3000/generate-pdf
+Content-Type: application/json
+
+{
+  "data": [
+    {
+      "company_id": 1,
+      "company_name": "Empresa fictícia X",
+      "batch": "456123",
+      "address": "Rua Exemplo 123, Bairro Exemplo, Cidade Exemplo - Estado",
+      "item_table": [
+        {
+          "method_description": "Medição de umidade por balança halogenada",
+          "parameter_description": "¹Umidade (%)",
+          "specification": "Medição de umidade por balança halogenada",
+          "result": "5,39"
+        },
+        {
+          "method_description": "Medição de proteína por balança halogenada",
+          "parameter_description": "²Proteína (%)",
+          "specification": "Medição de proteína por balança halogenada",
+          "result": "12,45"
+        },
+        {
+          "method_description": "Análise mineral por espectrometria",
+          "parameter_description": "³Minerais (%)",
+          "specification": "Análise mineral por espectrometria",
+          "result": "3,02"
+        },
+        {
+          "method_description": "Medição de umidade por balança halogenada",
+          "parameter_description": "¹Umidade (%)",
+          "specification": "Medição de umidade por balança halogenada",
+          "result": "6,15"
+        },
+        {
+          "method_description": "Análise de pH por titulação potenciométrica",
+          "parameter_description": "⁴pH",
+          "specification": "Análise de pH por titulação potenciométrica",
+          "result": "7,20"
+        },
+        {
+          "method_description": "Análise mineral por espectrometria",
+          "parameter_description": "³Minerais (%)",
+          "specification": "Análise mineral por espectrometria",
+          "result": "2,75"
+        }
+      ]
+    },
+    {
+      "company_id": 2,
+      "company_name": "Empresa fictícia Y",
+      "batch": "123456",
+      "address": "Rua Exemplo 123, Bairro Exemplo 2, Cidade Exemplo 2 - Estado 2",
+      "item_table": [
+        {
+          "method_description": "Medição de proteína por balança halogenada",
+          "parameter_description": "²Proteína (%)",
+          "specification": "Medição de proteína por balança halogenada",
+          "result": "13,57"
+        },
+        {
+          "method_description": "Análise de pH por titulação potenciométrica",
+          "parameter_description": "⁴pH",
+          "specification": "Análise de pH por titulação potenciométrica",
+          "result": "6,95"
+        },
+        {
+          "method_description": "Análise mineral por espectrometria",
+          "parameter_description": "³Minerais (%)",
+          "specification": "Análise mineral por espectrometria",
+          "result": "3,40"
+        },
+        {
+          "method_description": "Medição de umidade por balança halogenada",
+          "parameter_description": "¹Umidade (%)",
+          "specification": "Medição de umidade por balança halogenada",
+          "result": "5,80"
+        }
+      ]
+    }
+  ]
+}
